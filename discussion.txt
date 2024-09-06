@@ -1,0 +1,71 @@
+- Review the programming tools
+	- Array
+		- is a collection of elements of the same type stored in memory locations
+		- one of the fundamental data structures in programming, used to store multiple values of the same type
+		- array literal []
+			- the size of the array is fixed upon creation and cannot be changed
+
+			- syntax:
+				type arrayName[arraySize];
+
+				- declaration without initialization
+					- allocates the memory but does not set initial values
+
+					ex. int number[5];
+
+				- declaration with initialization
+					- sets the values of the array elements
+
+					ex. int number[5] = {1, 2, 3, 4, 5};
+
+		- Accesing Elements
+			- array elements are access using an indx with indices starting at zero (0)
+			- syntax:
+				name[index]
+
+				int number[5] = {1, 2, 3, 4, 5};
+
+				//accessing the first element
+				int firstNumber = number[0]
+
+		- Modifying Elements
+			- it allows us to change the value of an array element by assigning a new value to a specific index
+			- syntax:
+				name[index]
+
+				int number[5] = {1, 2, 3, 4, 5};
+				number[1] = 25;
+
+				//output
+				int number[5] = {1, 25, 3, 4, 5};
+
+		- Iterating through an array
+			- common operation is to loop through the array to perform operations on each elements such as summing or printing them
+
+				//print each elements inside the array
+				for(int i = 0; i <= 5; i++){
+					std::cout << numbers[i] << " ";
+				}
+
+		- Finding the length of the array
+			- it determines the size of a statically allocated array using the sizeOf operator
+
+				int size = sizeOf(numbers)
+				cout << "The size of the array" << size;
+
+		- Multidimensional Array
+			- arrays to have more than one dimension
+
+			int matrix[row][column]
+
+			int matrix[3][4] = {
+				{1, 2, 3, 4}
+				{5, 6, 7, 8}
+				{9, 10, 11, 12}
+			}
+
+			- access the 2D
+				int value = matrix[1][2];
+					value = 7
+				// how access the element inside the matrix
+	- Pointers
